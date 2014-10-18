@@ -10,7 +10,8 @@ Module Rules
     background-color: $color;
     display: inline-block;
     @include headline-font;
-    padding: 0 4px;
+    margin-bottom: 5px;
+    padding: 0 8px;
     text-decoration: none;
 }
 
@@ -52,7 +53,7 @@ header[role="banner"] h1 {
 
 header[role="banner"] img {
     border-radius: 50%;
-    width: 75%;
+    width: 50%;
 }
 
 header[role="banner"] p {
@@ -71,8 +72,8 @@ header[role="banner"] a:hover {
 }
 
 .contact svg {
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
 }
 
 .contact svg path {

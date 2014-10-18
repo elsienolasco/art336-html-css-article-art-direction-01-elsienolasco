@@ -5,7 +5,7 @@ Base Rules
 
 body {
     color: $color;
-    background-color: #ACEED5;
+    background-color: $background-color;
     box-sizing: border-box;
     @include body-font-regular;
     @include fontSize(18px);
@@ -26,6 +26,7 @@ img {
 
 a {
     text-decoration: none;
+    fill: $background-color;
 }
 
 

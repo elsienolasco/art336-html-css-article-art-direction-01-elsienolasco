@@ -1,20 +1,3 @@
-// Animated Page Scroll
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-
-
 // initialize animated anchor scroll
 // Remove /* and */ to initiate the plugin
 $(function() {
@@ -45,17 +28,23 @@ $(document).ready(function(){
 $(function() {
     WebFont.load({
         custom: {
-            families: ['cubano'], // font-family name
+            families: ['mono45-headline'], // font-family name
             urls : ['css/main.css'] // url to css
         },
         active: function() {
             $('#banner-headline').bigtext();
-            $('#identity-headline').bigtext();
-            $('#typography-headline').bigtext();
-            $('#webapps-headline').bigtext();
+            //$('#vlogbrothers-headline').bigtext();
+            //$('#vidcon-headline').bigtext();
+            //$('#DFTBA-records-headline').bigtext();
+            //$('#sci-show-headline').bigtext();
+            //$('#crash-course-headline').bigtext();
+            //$('#2-D-glasses-headline').bigtext();
+            //$('#ecogeek-headline').bigtext();                         
         }
     });
 }); 
+
+
 
 
 // initialize Menu Button Expand/Collapse
@@ -66,6 +55,8 @@ $(document).ready(function(){
         $(".toggle-button").next("ul").slideToggle();
     });
 });
+
+
 
 
 // initialize responsiveslides.js

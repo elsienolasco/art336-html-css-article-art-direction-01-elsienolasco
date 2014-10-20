@@ -55,8 +55,10 @@ header[role="banner"] h1 {
 
 header[role="banner"] img {
     border: 8px solid $background-color;
-    border-radius: 50%;
-    width: 60%;
+    width: 360px;
+	height: 360px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 header[role="banner"] p {
@@ -94,6 +96,7 @@ main[role="main"] h1 {
     color: $background-color;
     //animation: colorchange-font 5s linear 1s infinite alternate;
     padding: 0 8px;
+    text-align: center;
 }
 
 footer[role="contentinfo"] {

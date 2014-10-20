@@ -15,6 +15,7 @@ body {
     width: 100%;
 }
 
+
 h1, h2, {
     @include headline-font;
 }
@@ -30,3 +31,24 @@ a {
 }
 
 
+blockquote {
+    background-color: darken($background-color, 60%);
+    color: $background-color;
+    padding: 16px;
+    margin: 0;
+}
+
+blockquote p {
+    margin-top: 0;
+}
+
+blockquote cite {
+    display: block;
+    @include body-font-bold;
+    text-align: right;
+}
+
+em {
+    //color: lighten($color, 10%);
+    -webkit-text-stroke: 1px lighten($color, 10%);
+}

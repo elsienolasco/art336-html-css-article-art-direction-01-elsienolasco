@@ -6,6 +6,8 @@ Base Rules
 body {
     color: $color;
     background-color: $background-color;
+    background-image: url('../img/bghd2-01.png');
+    background-size: 10px;
     box-sizing: border-box;
     @include body-font-regular;
     @include fontSize(18px);
@@ -52,3 +54,11 @@ em {
     //color: lighten($color, 10%);
     -webkit-text-stroke: 1px lighten($color, 10%);
 }
+
+
+
+
+
+
+
+

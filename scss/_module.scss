@@ -107,3 +107,61 @@ footer[role="contentinfo"] {
     padding: 4px 8px 8px 8px;
 }
 
+
+
+
+
+
+header[role="banner"] {
+    //animation: colorchange-font 5s linear 1s infinite alternate;
+    background-color: $color;
+    color: $background-color;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+
+header[role="banner"] img {
+    border: 8px solid $background-color;
+    width: 360px;
+	height: 360px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+header[role="banner"] a {
+    color: $background-color;
+    @include body-font-italic;
+    transition: color 400ms linear;
+}
+
+header[role="banner"] a:hover {
+    color: darken($background-color, 12%);
+    transition: color 400ms linear;
+}
+
+header[role="banner"] svg {
+    color: darken($background-color, 12%);
+    transition: color 400ms linear;
+}
+
+.top svg {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+.top svg path {
+    fill: $background-color;
+    transition: fill 400ms linear;
+}
+
+.top a:hover svg path {
+    fill: darken($background-color, 12%);
+    transition: fill 400ms linear;
+}
+
+
+
